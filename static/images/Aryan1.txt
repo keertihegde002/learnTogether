@@ -1,0 +1,61 @@
+Problem Name: Fill_String                                  Problem Code: FS0001 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+You are given a string S of length N which consists of three characters 'X','O','_' . You can fill the empty positions either with 'X' or 'O'.
+The empty positions are denoted by '_' character . Your task is to find out whether the empty positions can be filled in such a way that the 
+resulting string formed after filling up all the characters becomes a palindrome.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Input Format:
+
+->The first line contains T denoting the number of test cases. Then the test cases follow.
+
+->The first line of each test case contains a single integer N which denotes the length of the string S. 
+
+->The second line of each test case contains a string S .
+
+NOTE: String S only contains 'X', 'O' , '_' characters.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Output Format:
+
+For each test case print "YES" if the resulting string can form a palindrome ,otherwise "NO" 
+
+NOTE :Output are case-sensitive.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Constraints :
+
+1<=T<=10
+1<=N<=20
+|S|=N 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sample Input1 :
+
+2
+4
+XXX_
+5
+XOXX_
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Sample Output1:
+
+YES
+NO
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Explanation:
+
+Explanation for the first test case: We can fill the last position with the character 'X'. Hence the resultant string becomes XXXX which is a palindrome.
+
+
+

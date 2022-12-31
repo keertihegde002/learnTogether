@@ -12,5 +12,7 @@ urlpatterns = [
     path('register',views.registerUser,name="register"),
     path('profile/<int:pk>',views.userProfile,name="user-profile"),
     path('update-user',views.updateUser,name="user-update"),
+    path('topics',views.topicPage,name="topicpage"),
+    path('activity',views.activityPage,name="activity"),
 
 ]

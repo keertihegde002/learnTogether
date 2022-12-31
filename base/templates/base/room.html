@@ -69,7 +69,7 @@
                   <div class="avatar avatar--small">
                     <img src="https://randomuser.me/api/portraits/men/37.jpg" />
                   </div>
-                  <span>@{{room.user.username}}</span>
+                  <span>@{{room.host.username}}</span>
                 </a>
               </div>
               <div class="room__details">
@@ -102,7 +102,12 @@
             </div>
           </div>
           <div class="room__message">
-            <form action="#"><input name="" placeholder="Write your message here..." /></form>
+            {% if request.user.is_authenticated %}
+            <form action="" method="post">
+              {% csrf_token %}
+              <input name="body" placeholder="Write your message here..." />
+            </form>
+            {% endif %}
           </div>
         </div>
         <!-- Room End -->
